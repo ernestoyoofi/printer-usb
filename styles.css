@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #04040f;
+  color: white;
+}
+a {
+  color: #0046c9;
+}
+* {
+  font-family: 'Jetbrains Mono', sans-serif;
+}
+.response {
+  width: 100%;
+  max-width: 590px;
+  margin: auto;
+}
+.control-unit {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-control {
+  padding: 4px 20px;
+}
+.alert-warning {
+  background-color: rgba(255, 0, 0, 0.2);
+  border-left: 9px solid #ff0000;
+  margin: 0px;
+  padding: 7px 16px;
+  padding-left: 14px;
+}
+.alert-warning b.info {
+  font-size: 19px;
+}
+.alert-warning p {
+  margin-bottom: 0px;
+}
+.control-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0px;
+}
+.control-btn button {
+  width: 100%;
+  border: 1px solid #3b3b3b;
+  background: #191919;
+  color: inherit;
+  font-size: 15px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.control-btn button:disabled {
+  border: 1px solid #292929;
+  background: #181818;
+  font-style: italic;
+  color: #949494;
+}
+.control-btn button.givemegap {
+  margin: 0px 12px;
+}
+@media only screen and (max-width: 590px) {
+  .control-btn {
+    display: block;
+  }
+  .control-btn button {
+    width: 100%;
+    display: block;
+  }
+  .control-btn button.givemegap {
+    margin: 7px 0px;
+  }
+}
